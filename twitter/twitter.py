@@ -30,7 +30,6 @@ while True:
     payload = {}
     headers = {
         'Authorization': 'Bearer ' + file.read(),
-        'Cookie': 'guest_id=v1%3A163271135500119327; personalization_id="v1_rkGujUjhyZMXfGa5EmJ7Lw=="'
     }
 
     # Do request
