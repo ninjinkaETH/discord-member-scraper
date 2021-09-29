@@ -29,7 +29,7 @@ while True:
         fiveMinutesAgoString+"&max_results=100&tweet.fields=entities,text"
     payload = {}
     headers = {
-        'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAACfqTwEAAAAAMRcWwUWjCNwFCDgoyuchxzDrPhw%3DD3brCXkZuVrQpOXdBFjFLdFkB93q9CpFuzSf8VnOqULuIF3ZeW',
+        'Authorization': 'Bearer ' + file.read(),
         'Cookie': 'guest_id=v1%3A163271135500119327; personalization_id="v1_rkGujUjhyZMXfGa5EmJ7Lw=="'
     }
 
