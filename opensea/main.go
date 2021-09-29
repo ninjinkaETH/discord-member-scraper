@@ -38,7 +38,7 @@ func main() {
 			g.GetRendered("https://opensea.io/rankings", g.Opt.ParseFunc)
 		},
 		ParseFunc:          rankingsParse,
-		Exporters:          []export.Exporter{&export.JSONLine{FileName: "nfts.jl"}},
+		Exporters:          []export.Exporter{&export.JSONLine{FileName: "out/nfts.jl"}},
 		UserAgent:          "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0",
 		RobotsTxtDisabled:  true,
 		RetryHTTPCodes:     []int{500, 502, 503, 504, 522, 524, 408, 429},
