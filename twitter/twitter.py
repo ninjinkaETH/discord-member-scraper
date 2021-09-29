@@ -11,13 +11,13 @@ starttime = time.time()
 while True:
     print("Making request...")
     # Read in previous Discord links
-    with open("serverlinks_twitter.csv", "r") as file:
+    with open("out/serverlinks_twitter.csv", "r") as file:
         reader = csv.reader(file)
         for row in reader:
             discordLinks[row[1]] = True
 
     # Read in API key
-    file = open("twitter_api.txt", "r")
+    file = open("twitter/twitter_api.txt", "r")
 
     # Get the time 5 minutes ago
     currentDatetime = datetime.datetime.now()
@@ -45,7 +45,7 @@ while True:
                 discordLinks[url["expanded_url"]] = True
 
     # Write unique Discord URLs
-    with open("serverlinks_twitter.csv", "w", newline='') as file:
+    with open("out/serverlinks_twitter.csv", "w", newline='') as file:
         writer = csv.writer(file)
         for discordLink in discordLinks:
             writer.writerow(["", discordLink, ""])
