@@ -75,5 +75,5 @@ for server_id in server_stats:
 
 fig.tight_layout()
 fig.autofmt_xdate()
-plt.savefig("servers.png", bbox_inches='tight', dpi=1000.0)
+plt.savefig("out/servers.png", bbox_inches='tight', dpi=1000.0)
 plt.show()
