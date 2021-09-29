@@ -1,7 +1,17 @@
 # discord-member-count
 Scrapes Discord servers for their member counts just using invites.
 
-## Scraping
+## Scraping OpenSea
+
+To scrape OpenSea for Discord links and other useful information, do:
+
+`go run opensea/main.go`
+
+## Scraping Twitter
+
+To scrape Twitter every 5 minutes for Discord links, run `twitter/twitter.py`. You will also need a file in the `twitter` directory named `twitter_api.txt` that contains your Twitter API bearer token.
+
+## Scraping Discord
 
 To run the scraping file, make a CSV named `serverlinks.csv` of format:
 
